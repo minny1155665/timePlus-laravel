@@ -1,0 +1,274 @@
+@import url("reset.css");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Comfortaa, "Noto Sans TC", sans-serif;
+}
+img {
+    display: block;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+.toplogo {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-bottom: 1px solid #d8d8d8;
+}
+.toplogo > h1 {
+    display: block;
+    height: auto;
+    width: 20%;
+    overflow: hidden;
+    float: left;
+    margin: 30px 50px;
+}
+.toplogo > h1 > img {
+    width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+    .toplogo > h1 {
+        float: none;
+        margin: 20px auto;
+    }
+}
+
+#app {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+#app > article {
+    width: 750px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+#app > article > #tickets,
+#pasttickets {
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.ticket {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ticket > #photo {
+    width: 40%;
+    height: auto;
+    overflow: hidden;
+}
+.ticket > #photo > img {
+    width: 100%;
+}
+.ticket > #inform {
+    width: 60%;
+    float: right;
+    height: auto;
+    overflow: hidden;
+    font-size: 20px;
+    line-height: 40px;
+    display: block;
+    text-align: center;
+}
+
+.ticket > #inform > #time {
+    display: block;
+    width: 100%;
+    text-align: right;
+    text-decoration: none;
+    color: royalblue;
+}
+.ticket > #inform > #location {
+    display: block;
+    width: 100%;
+    text-align: right;
+    text-decoration: none;
+    color: royalblue;
+}
+.ticket > #inform > p {
+    display: block;
+    width: 100%;
+    text-align: right;
+    font-size: 26px;
+    line-height: 52px;
+    font-weight: normal;
+}
+
+.ticket > #inform > #delete {
+    text-align: right;
+    line-height: 52px;
+}
+
+.ticket > #inform > #delete > form > input {
+    color: rgb(245, 73, 73);
+    font-size: 26px;
+    font-weight: normal;
+    background-color: transparent;
+    border: transparent;
+}
+
+.ticket > #inform > a {
+    display: block;
+    width: 100%;
+    color: rgb(245, 73, 73);
+    text-align: right;
+    font-size: 26px;
+    line-height: 52px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.pastticket {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.pastticket > #photo {
+    width: 40%;
+    height: auto;
+    overflow: hidden;
+}
+.pastticket > #photo > img {
+    width: 100%;
+}
+.pastticket > #inform {
+    width: 60%;
+    float: right;
+    height: auto;
+    overflow: hidden;
+    font-size: 20px;
+    line-height: 40px;
+    display: block;
+    text-align: center;
+}
+
+.pastticket > #inform > #time {
+    display: block;
+    width: 100%;
+    text-align: right;
+    text-decoration: none;
+    color: darkgrey;
+}
+.pastticket > #inform > #location {
+    display: block;
+    width: 100%;
+    text-align: right;
+    text-decoration: none;
+    color: darkgrey;
+}
+.pastticket > #inform > p {
+    color: grey;
+    display: block;
+    width: 100%;
+    text-align: right;
+    font-size: 26px;
+    line-height: 52px;
+    font-weight: normal;
+}
+@media screen and (max-width: 750px) {
+    .ticket > #inform > #time,
+    #location {
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .ticket > #inform > p {
+        font-size: 16px;
+        line-height: 32px;
+    }
+    .pastticket > #inform > #time,
+    #location {
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .pastticket > #inform > p {
+        font-size: 16px;
+        line-height: 32px;
+    }
+}
+@media screen and (max-width: 750px) {
+    #app > article {
+        width: 100%;
+    }
+}
+
+.navigation {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #ffffff;
+    border-top: 1px solid #d8d8d8;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.navigation > #main {
+    width: 750px;
+    height: auto;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navigation > #main > div > img {
+    width: 30px;
+    height: auto;
+    overflow: hidden;
+    margin: 10px auto 10px auto;
+}
+.navigation > #main > div {
+    width: 20%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    color: #999999;
+    font-size: 18px;
+    line-height: 50px;
+}
+.navigation > #main > div:hover {
+    color: #a8d8b9;
+    border-top: 1px solid #a8d8b9;
+}
+.navigation > #main > .selectednav {
+    color: #a8d8b9;
+    border-top: 1px solid #a8d8b9;
+}
+
+.navigation > .newaparty {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 100%;
+    left: 0;
+}
+@media screen and (max-width: 750px) {
+    .navigation > #main {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    .navigation > #main > div {
+        font-size: 15px;
+        line-height: 50px;
+    }
+}
